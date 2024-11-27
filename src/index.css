@@ -1,0 +1,144 @@
+:root {
+	font-family: Arial, sans-serif !important;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: white;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
+a:hover {
+	color: #535bf2;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+input.form-control:focus {
+	box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+	border-color: #198754;
+}
+
+.form-control::placeholder {
+	color: rgba(0, 0, 0, 0.4);
+	opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+	a:hover {
+		color: #747bff;
+	}
+	button {
+		background-color: #f9f9f9;
+	}
+}
+
+.title-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.title-dots {
+	flex-grow: 1;
+	overflow: hidden;
+	font-size: 13px;
+	font-weight: 500;
+	color: white;
+	text-align: center;
+	letter-spacing: 0.85px;
+}
+
+.title-dots.size-15 {
+	font-size: 15px;
+}
+
+.title-dots::before {
+	content: '.....................................................................................................................................................................';
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.title-text {
+	padding: 0 2px;
+	flex-shrink: 0;
+	font-size: 13px;
+	font-weight: 500;
+	color: white;
+	letter-spacing: 0.85px;
+}
+
+.title-text.size-15 {
+	font-size: 15px;
+}
+
+.status-container {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.status-message {
+	flex-shrink: 0;
+	margin-right: 2px;
+	font-size: 13px;
+	font-weight: 500;
+	color: white;
+	letter-spacing: 0.85px;
+}
+
+.status-dots {
+	flex-grow: 1;
+	overflow: hidden;
+	font-size: 13px;
+	font-weight: 500;
+	color: white;
+	text-align: right;
+	letter-spacing: 0.85px;
+}
+
+.status-dots::after {
+	content: '.....................................................................................................................................................................';
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.status-result {
+	flex-shrink: 0;
+	margin-left: 2px;
+	font-size: 13px;
+	font-weight: 500;
+	color: white;
+	letter-spacing: 0.85px;
+}
